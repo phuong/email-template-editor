@@ -1,4 +1,4 @@
-## email-template-editor/django
+## email-template-editor / django
 
 Install node module
 
@@ -16,5 +16,6 @@ gulp
 ```
 
 - Create mockup email data in ```data.json```
-- Review template in ```rendered```
+- Compliled templates in ```templates```
+- Review your templates in ```rendered```
 - If email has some custom tags, create custom tags in ```lib/tags```
