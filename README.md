@@ -6,7 +6,7 @@ Work with inline css in html file just like a nightmare.
 When use ETE, you will build your email templates on **html** and **css** files as we did with frontend.
 ETE will combine to inline css template.
 By the way, ETE will render a viewable file (in **rendered**) with faked data (defined in **data.json**)
-so you can see how it looks.
+so you can see how your looks.
 
 
 ## django
