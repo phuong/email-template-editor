@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+    <meta name="format-detection" content="telephone=no"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,700,600' rel='stylesheet' type='text/css' data-embed-ignore>
+    <link rel="stylesheet" type="text/css" href="../css/embed.css" data-embed/>
+    <link rel="stylesheet" type="text/css" href="../css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/template_1.css"/>
+    <title>{{ subject }}</title>
+</head>
+
+
+<body topmargin="0" rightmargin="0" bottommargin="0" leftmargin="0" marginwidth="0" marginheight="0" width="100%" bgcolor="#FFFFFF" text="#000000">
+
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="table-0p0m">
+    <tr>
+        <td align="center" valign="top" class="table-0p0m header">
+            <table class="container table-header">
+                <tr>
+                    <td>
+                        <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" class="logo"/>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="top" class="td-0p0m" style="padding-top: 5px;">
+
+            {% block container %}
+            {% endblock container %}
+
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="top" class="td-0p0m footer">
+            {% block footer %}
+                BLOCK FOOTER
+            {% endblock footer %}
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

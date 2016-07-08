@@ -1,0 +1,4 @@
+/node_modules/*
+/tmpl/rendered/*
+/npm-debug.log
+data.json

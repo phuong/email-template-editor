@@ -1,0 +1,19 @@
+{
+  "name": "emails",
+  "version": "1.0.0",
+  "description": "Email template editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "phuong",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-email-builder": "^1.0.4",
+    "gulp-util": "^3.0.7",
+    "swig": "^1.4.2",
+    "through2": "^2.0.1",
+    "run-sequence": "^1.1.5"
+  }
+}

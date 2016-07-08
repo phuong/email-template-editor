@@ -1,0 +1,18 @@
+{
+  "paths": {
+    "html_source":["./html/*.html"],
+    "tmpl":"./tmpl",
+    "tmpl_source":["./tmpl/*.html"],
+    "rendered":"rendered"
+  },
+  "options": {
+    "compiler": {},
+    "builder": {}
+  },
+  "watchs": [
+    {
+      "define":"watch task"
+    }
+  ],
+  "watch": ["./css/*.css", "./html/*.html", "./data.json"]
+}
