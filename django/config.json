@@ -1,9 +1,9 @@
 {
   "paths": {
     "html_source":["./html/*.html"],
-    "tmpl":"./tmpl",
-    "tmpl_source":["./tmpl/*.html"],
-    "rendered":"rendered"
+    "tmpl":"./templates",
+    "tmpl_source":["./templates/*.html"],
+    "rendered":"./rendered"
   },
   "options": {
     "compiler": {},
