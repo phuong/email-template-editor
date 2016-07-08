@@ -2,7 +2,7 @@
 Edit your email template with zero inline css, You can also define and review your email template before send.
 
 
-## django: 
+## django
 This part is build to work fine with django template engine (and any
 engine looks like as django template engine syntaxes) (`{{ show_value }}` or `{% if condition %}Do something{% endif %}`)
 
