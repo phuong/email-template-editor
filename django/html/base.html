@@ -6,7 +6,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,700,600' rel='stylesheet' type='text/css' data-embed-ignore>
     <link rel="stylesheet" type="text/css" href="../css/embed.css" data-embed/>
     <link rel="stylesheet" type="text/css" href="../css/base.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/template_1.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
     <title>{{ subject }}</title>
 </head>
 
@@ -19,24 +19,23 @@
             <table class="container table-header">
                 <tr>
                     <td>
-                        <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" class="logo"/>
+                        <img src="http://i.imgur.com/d38saMc.png" class="logo"/>
                     </td>
+                    <td class="text-right header-text">Create nice email html with zero inline css</td>
                 </tr>
             </table>
         </td>
     </tr>
     <tr>
         <td align="center" valign="top" class="td-0p0m" style="padding-top: 5px;">
-
             {% block container %}
             {% endblock container %}
-
         </td>
     </tr>
     <tr>
         <td align="center" valign="top" class="td-0p0m footer">
             {% block footer %}
-                BLOCK FOOTER
+                {% include '_footer_default.html' %}
             {% endblock footer %}
         </td>
     </tr>

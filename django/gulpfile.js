@@ -11,33 +11,33 @@ var through = require('through2');
 
 gulp.task('build_email', function () {
     gulp.src(paths.html_source)
-        .pipe(emailBuilder(options.builder))
-        .pipe(utils.minify())
-        .pipe(gulp.dest(paths.tmpl));
+            .pipe(emailBuilder(options.builder))
+            .pipe(utils.minify())
+            .pipe(gulp.dest(paths.tmpl));
 });
 
 gulp.task('compile_email', function () {
     return gulp.src(paths.tmpl_source)
-        .pipe(templateCompiler(options.compiler))
-        .pipe(gulp.dest(paths.rendered));
+            .pipe(templateCompiler(options.compiler))
+            .pipe(gulp.dest(paths.rendered));
 });
 
 gulp.task('after_compile', function () {
     return gulp.src(paths.tmpl_source)
-        .pipe(fixBasePath({
-            '_find': 'base.html',
-            '_replaceBy': 'tmpl/base.html'
-        }))
-        .pipe(gulp.dest(function (file) {
-            return file.base;
-        }));
+            .pipe(afterCompile({
+                'opts1': '___',
+                'opts2': '___'
+            }))
+            .pipe(gulp.dest(function (file) {
+                return file.base;
+            }));
 });
 
-function fixBasePath(opts) {
+function afterCompile(opts) {
     return through.obj(function (file, enc, cb) {
         if (file.isBuffer()) {
             var html = file.contents.toString();
-            html = html.replace(opts._find, opts._replaceBy);
+            // Do something with html
             file.contents = new Buffer(html);
             cb(null, file);
         }
