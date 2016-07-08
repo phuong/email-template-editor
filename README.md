@@ -14,7 +14,7 @@ This part is build to work fine with django template engine (and any
 engine that has syntaxes same as django template engine) (`{{ show_value }}` 
 and `{% if condition %}Do something{% endif %}` and `{{ object.value|filter }}`)
 
-[Read more how to use](https://github.com/phuong/email-template-editor/blob/master/django/README.md)
+Read more [Email template editor with django](https://github.com/phuong/email-template-editor/blob/master/django/README.md)
 
 
 ## todo
