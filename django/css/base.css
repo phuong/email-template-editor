@@ -87,3 +87,8 @@ img {
     font-size: 120%;
     font-weight: bold;
 }
+.footer {
+    background: #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
