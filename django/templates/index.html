@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load email %}
+{% block container %}
+{% body %}
+This is sample html
+{% endbody %}
+{% bodyhtml %}
+
+
+<div >
+<div  style="width: 100%; max-width: 560px;">
+	<table border="0" cellpadding="0" cellspacing="0" align="center"  style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; width: 100%;">
+		<tr>
+			<td  style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;">
+				<br>
+				{% for message in messages %}
+				<div  style="padding: 26px; box-shadow: 0 1px 1px rgba(0,0,0,.12),0 1px 1px rgba(0,0,0,.24); margin-bottom: 30px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #FFF; overflow: hidden;">
+					{{ message }}
+				</div>
+				{% endfor %}
+				
+				<div  style="box-shadow: 0 1px 1px rgba(0,0,0,.12),0 1px 1px rgba(0,0,0,.24); margin-bottom: 30px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #FFF; overflow: hidden; padding: 0px;">
+					<img src="http://i.imgur.com/rFPki.jpg" style="margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block; max-width: 560px;">
+					<div  style="padding: 10px; font-size: 12px; font-style: italic;">
+						Nice photo from i.imgur.com
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td  align="center" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;">
+							</td>
+		</tr>
+	</table>
+</div>
+</div>
+{% endbodyhtml %}
+{% endblock container %}
+
+{% block footer %}
+	{% include '_footer.html' %}
+{% endblock footer %}

@@ -1,0 +1,15 @@
+{
+  "base.html": {
+    "subject": "Email template title sample"
+  },
+  "_header.html": {
+  },
+  "index.html": {
+      "messages": [
+          "Build your email templates without inline css.",
+          "Build email template with rich format and inheritance.",
+          "Save your time by create a viewable html file before send.",
+          "Works fine with django template engine and any engine has same syntaxes."
+      ]
+  }
+}
