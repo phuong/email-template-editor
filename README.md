@@ -10,6 +10,7 @@ engine that has syntaxes same as django template engine) (`{{ show_value }}` and
 
 
 ## TODO
-Use SASS to compile
-Apply for other template engines
+- Use SASS to compile
+- Apply for other template engines
+- Prepare for other frameworks
   
