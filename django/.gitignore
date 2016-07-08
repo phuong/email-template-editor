@@ -1,5 +1,5 @@
 /node_modules/*
-/templates/*
-/rendered/*
+#/templates/*
+#/rendered/*
 /npm-debug.log
-data.json
+#data.json

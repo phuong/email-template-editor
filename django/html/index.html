@@ -8,21 +8,27 @@ This is sample html
 <link rel="stylesheet" type="text/css" href="../css/index.css"/>
 <link rel="stylesheet" type="text/css" href="../css/base.css"/>
 <div class="fix-padding">
-<div class="content applicant-ctn">
-    <table border="0" cellpadding="0" cellspacing="0" align="center" class="table-0p0m table-applicant">
+<div class="content">
+    <table border="0" cellpadding="0" cellspacing="0" align="center" class="table-0p0m">
         <tr>
-            <td class="td-0p0m td-candidate-header">
-                <table class="table-0p0m table-applicant-header">
-                    <tr>
-                        <td align="left">
-                            COMPANY NAME
-                        </td>
-                    </tr>
-                </table>
+            <td class="td-0p0m">
+                <br>
+                {% for message in messages %}
+                <div class="card">
+                    {{ message }}
+                </div>
+                {% endfor %}
+                
+                <div class="card card-nopadding">
+                    <img src="http://i.imgur.com/rFPki.jpg">
+                    <div class="caption">
+                        Nice photo from i.imgur.com
+                    </div>
+                </div>
             </td>
         </tr>
         <tr>
-            <td class="td-0p0m td-messages-ctn" align="center">
+            <td class="td-0p0m" align="center">
                
             </td>
         </tr>

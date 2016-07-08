@@ -4,3 +4,26 @@
 .footer-message {
     padding-bottom: 10px;
 }
+
+.card {
+    padding: 26px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.12),0 1px 1px rgba(0,0,0,.24);
+    margin-bottom: 16px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    background:#FFF;
+    overflow: hidden;
+}
+.card-nopadding {
+    padding: 0px !important;
+}
+.card-nopadding img {
+    max-width: 560px;
+}
+.caption {
+    padding: 10px;
+    font-size: 12px;
+    font-style: italic;
+}
